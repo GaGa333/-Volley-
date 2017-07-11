@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.TelLoginActivity" >
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:background="#F6F6F6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_tel_login_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/icon_back2" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+             android:textSize="22sp"
+            android:id="@+id/tv_tel_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机登录" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_marginBottom="12dp"
+         android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+          android:layout_above="@+id/bt_tel_login_btn"
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="vertical" >
+         <EditText
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/et_tel_login_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_tel_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        </RelativeLayout>
+
+   
+
+    <Button
+        android:background="@drawable/button_login_by_password_selector"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:id="@+id/bt_tel_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步" />
+
+</RelativeLayout>

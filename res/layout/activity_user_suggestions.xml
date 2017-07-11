@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feed_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_feedback_text_bg"
+        android:gravity="top"
+        android:hint="@string/user_feedback_text_tip_hint"
+        android:inputType="textMultiLine"
+        android:paddingEnd="17dp"
+        android:paddingStart="17dp"
+        android:paddingTop="16dp"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="请留下您的联系方式，邮箱、手机号或者QQ号以便需要时我们方便与您取得联系"
+        android:textColor="@color/coupon_info_gray_666666" />
+
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_center_bg_without_arrow"
+        android:hint="@string/user_feedback_contant_tip_hint"
+        android:maxLines="1"
+        android:paddingEnd="17dp"
+        android:paddingStart="17dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/user_feedback_btn"
+        android:textSize="16sp"
+        android:onClick="submit"/>
+</LinearLayout>

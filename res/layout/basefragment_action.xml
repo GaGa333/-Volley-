@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#5495E5"
+    >
+    <ImageView
+        android:layout_marginLeft="12dp"
+        android:id="@+id/imageView_Actionbar_Left"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher"
+        />
+    <TextView
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:id="@+id/textView_Actionbar_Title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="标题文本"
+        />
+    <ImageView
+         android:layout_marginRight="12dp"
+        android:id="@+id/imageView_Actionbar_Right"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
+

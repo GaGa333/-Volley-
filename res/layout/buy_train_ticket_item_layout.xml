@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal"
+    >
+
+    <TextView
+         android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tv_ticket_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="票务类型" />
+
+    <TextView
+         android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="票价" />
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tv_ticket_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="余票" />
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/buy_ticket_item_button_selector"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/but_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订票" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:background="#ffffff"
+        android:id="@+id/radiogroup_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:textSize="14sp"
+            android:id="@+id/radio_train"
+            style="@style/radio_style"
+            android:checked="true"
+            android:drawableTop="@drawable/main_radiogroup_radio1" 
+            android:gravity="center"
+            android:text="火车票"
+            android:textColor="#707070" />
+        <RadioButton
+            android:textSize="14sp"
+            android:id="@+id/radio_plane"
+            style="@style/radio_style"
+            android:checked="false"
+            android:drawableTop="@drawable/main_radiogroup_radio2" 
+            android:gravity="center"
+            android:text="飞机票"
+            android:textColor="#707070" />
+
+        <RadioButton
+            android:textSize="14sp"
+            android:id="@+id/radio_bus"
+            style="@style/radio_style"
+            android:checked="false"
+            android:drawableTop="@drawable/main_radiogroup_radio3" 
+            android:gravity="center"
+            android:text="汽车票"
+            android:textColor="#707070" />
+
+        <RadioButton
+            android:textSize="14sp"
+            android:id="@+id/radio_personal"
+            style="@style/radio_style"
+            android:checked="false"
+            android:drawableTop="@drawable/main_radiogroup_radio4" 
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="#707070" />
+    </RadioGroup>
+</LinearLayout>

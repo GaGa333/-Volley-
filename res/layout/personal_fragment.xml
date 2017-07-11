@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#5495E5"
+    >
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/textView_Actionbar_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="用户中心"
+        />
+</RelativeLayout>
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:height="0.5dp"
+        android:background="@drawable/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_logon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_my_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user_name" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/user"
+            android:textColor="@color/coupon_info_gray_333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:text="@string/user_name"
+            android:textColor="@color/coupon_info_gray_666666"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_my_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/my_order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_order"
+            android:textColor="@color/coupon_info_gray_333333"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_gravity="end"
+        android:src="@drawable/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_discount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_my_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/my_discount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_discount"
+            android:textColor="@color/coupon_info_gray_333333"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_gravity="end"
+        android:src="@drawable/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_my_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/my_discount_recharge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_discount_recharge"
+            android:textColor="@color/coupon_info_gray_333333"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_my_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_my_setting_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_setting"
+            android:textColor="@color/coupon_info_gray_333333"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_my_item_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user_feedback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_feedback"
+            android:textColor="@color/coupon_info_gray_333333"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line_grey" />
+
+</LinearLayout>

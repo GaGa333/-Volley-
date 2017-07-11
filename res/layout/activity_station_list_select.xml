@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StationListSelectActivity" >
+
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+       android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_gjz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_edit_pressed"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="请输入关键字"
+            android:singleLine="true"
+            android:textSize="15sp" />
+        
+         <ImageView
+             android:visibility="gone"
+             android:layout_gravity="right|center_vertical"
+             android:layout_marginRight="16dp"
+            android:id="@+id/imageView_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emotionstore_progresscancelbtn" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/tv_location_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前定位城市" />
+
+        <Button
+            android:textSize="12sp"
+            android:layout_below="@+id/tv_location_city"
+            android:id="@+id/bt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="武汉" />
+
+        <ImageView
+            android:id="@+id/imageView_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/location" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listView_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:background="@drawable/show_head_toast_bg"
+            android:id="@+id/textView_py"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="TextView"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:textSize="30dp"
+            android:textColor="#ffffffff"
+             />
+
+        <com.gcc.taotaopiao.CustomWidget.SideBar
+            android:id="@+id/listView_py"
+            android:layout_gravity="right|center"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" >
+        </com.gcc.taotaopiao.CustomWidget.SideBar>
+
+    </FrameLayout>
+
+</LinearLayout>
